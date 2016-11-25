@@ -3,8 +3,6 @@
 
 Movie Trailer Web Page is a project for the Full Stack Web Developer Nanodegree. Is a dinamic Web Page created by python code, you only need to enter the data of the movie and this generate a web page with all the trailers data and you can play the movie trailer.
 
-To get started, check out <https://getbootstrap.com>!
-
 ## Table of contents
 
 - [Quick start](#quick-start)
