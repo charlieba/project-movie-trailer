@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fresh Tomatoes!</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: #EEE;
+            cursor: pointer;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><center>Fresh Tomatoes Movie Trailers With ToolTip Storyline</center></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ZIM1HydF9UA" data-toggle="modal" data-target="#trailer">
+<img src="http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/218170_poster_600_888_20161028050253.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.">
+  <h2>Deadpool</h2>
+</a>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="g7kdUy5_WlI" data-toggle="modal" data-target="#trailer">
+<img src="http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/150800_poster_600_888_20130521175402.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="Wolverine es un mutante que busca venganza contra Sabertooth, después de que éste asesinara a su novia. En su búsqueda termina en una unidad secreta llamadaX-Men, muy confundido con su pasado.">
+  <h2>Wolverine</h2>
+</a>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="pK2zYHWDZKo" data-toggle="modal" data-target="#trailer">
+<img src="http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/198209_poster_600_888_20150227100059.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="Los X-Men deberán luchar a través de dos períodos de tiempo, y cambiar un importante evento histórico, en una batalla épica para salvar el futuro de humanos y mutantes.">
+  <h2>X-MEN</h2>
+</a>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="QRfj1VCg16Y" data-toggle="modal" data-target="#trailer">
+<img src="http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/218166_poster_600_888_20160930050629.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="Un hombre de la frontera en una expedición para buscar pieles en el 1820 lucha por sobrevivir luego de ser mutilado por un oso y dado por muerto por miembros de su propio equipo de cacería.">
+  <h2>The Revenant</h2>
+</a>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="7JnC2LIJdR0" data-toggle="modal" data-target="#trailer">
+<img src="http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/218156_poster_600_888_20160730050431.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="La historia de James Donovan, un abogado de Brooklyn que termina en medio de la Guerra Fria cuando la CIA lo envia con la tarea casi imposible de negociar la liberacion de un piloto estadunidense capturado.">
+  <h2>Bridge of Spies</h2>
+</a>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_rRoD28-WgU" data-toggle="modal" data-target="#trailer">
+<img src="http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/228361_poster_600_888_20160628050038.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="Cuatro jóvenes viajan a un peligroso universo alterno que cambia su aspecto físico y les otorga poderes. Ahora, los cuatro fantásticos deberán aprovechar sus nuevas habilidades para salvar la Tierra de alguien que alguna vez fue su amigo.">
+  <h2>Fantastic Four</h2>
+</a>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="HcwTxRuq-uk" data-toggle="modal" data-target="#trailer">
+<img src="http://base.laptv.com/public/mcplay/imagenes/pub/176876_poster_600_888_20140423000029.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="Gerry Lane, empleado de las Naciones Unidas, deberá recorrer el mundo en una carrera contra el tiempo. Su misión será detener una pandemia zombi que amenaza con destruir a la humanidad.">
+  <h2>World War Z</h2>
+</a>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="gOW_azQbOjw" data-toggle="modal" data-target="#trailer">
+<img src="http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/218185_poster_600_888_20160430050212.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="Ethan y equipo asumen su misión más imposible aún, la erradicación de la Syndicate - una organización pícaro Internacional como altamente cualificados como son, comprometido con la destrucción del IMF.">
+  <h2>Mission: Impossible - Rogue Nation</h2>
+</a>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="1_INNPR84CI" data-toggle="modal" data-target="#trailer">
+<img src="http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/137247_poster_600_888_20131120061919.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="La princesa Fiona, recluida en la torre más alta de un lejano castillo, espera que su perfecto príncipe azul la rescate. En cambio, su salvador resulta ser Shrek, un ogro de pantano con muy poca paciencia.">
+  <h2>Shrek</h2>
+</a>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="PyVEHIO6jZ0" data-toggle="modal" data-target="#trailer">
+<img src="http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/154612_poster_600_888_20160610050138.jpg" width="220" height="342">
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="Un músico que lleva años con su novia, una estrella de televisión, se derrumba cuando la chica lo deja. Decidido a recuperar su vida, el joven emprende un viaje sin imaginar a quién se va a encontrar.">
+  <h2>Forgetting Sarah Marshall</h2>
+</a>
+</div>
+
+    </div>
+  </body>
+</html>
