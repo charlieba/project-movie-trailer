@@ -11,25 +11,25 @@ deadpool = media.Movie("Deadpool",
 
 # Wolverine movie
 wolverine = media.Movie("Wolverine",
-                    "Wolverine es un mutante que busca venganza contra Sabertooth, después de que "
-                    "éste asesinara a su novia. En su búsqueda termina en una unidad secreta llamada"
+                    "Wolverine es un mutante que busca venganza contra Sabertooth, despu&eacute;s de que "
+                    "&eacute;ste asesinara a su novia. En su b&uacute;squeda termina en una unidad secreta llamada"
                     "X-Men, muy confundido con su pasado.",
                     "http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/150800_poster_600_888_20130521175402.jpg",
                     "https://www.youtube.com/watch?v=g7kdUy5_WlI")
 
 # X-men movie
 xmen = media.Movie("X-MEN",
-                    "Los X-Men deberán luchar a través de dos períodos de tiempo, y cambiar un "
-                    "importante evento histórico, en una batalla épica para salvar el futuro de "
+                    "Los X-Men deber&aacute;n luchar a trav&eacute;s de dos per&iacute;odos de tiempo, y cambiar un "
+                    "importante evento hist&oacute;rico, en una batalla &eacute;pica para salvar el futuro de "
                     "humanos y mutantes.",
                     "http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/198209_poster_600_888_20150227100059.jpg",
                     "https://www.youtube.com/watch?v=pK2zYHWDZKo")
 
 # The revenant movie
 revenant = media.Movie("The Revenant",
-                    "Un hombre de la frontera en una expedición para buscar pieles en el 1820 lucha "
+                    "Un hombre de la frontera en una expedici&oacute;n para buscar pieles en el 1820 lucha "
                     "por sobrevivir luego de ser mutilado por un oso y dado por muerto por miembros "
-                    "de su propio equipo de cacería.",
+                    "de su propio equipo de cacer&iacute;a.",
                     "http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/218166_poster_600_888_20160930050629.jpg",
                     "https://www.youtube.com/watch?v=QRfj1VCg16Y")
 
@@ -43,39 +43,39 @@ bridge_of_spies = media.Movie("Bridge of Spies",
 
 # Fantastic four movie
 fantastic_four = media.Movie("Fantastic Four",
-                    "Cuatro jóvenes viajan a un peligroso universo alterno que cambia su aspecto "
-                    "físico y les otorga poderes. Ahora, los cuatro fantásticos deberán aprovechar "
+                    "Cuatro j&oacute;venes viajan a un peligroso universo alterno que cambia su aspecto "
+                    "f&iacute;sico y les otorga poderes. Ahora, los cuatro fant&aacute;sticos deber&aacute;n aprovechar "
                     "sus nuevas habilidades para salvar la Tierra de alguien que alguna vez fue su amigo.",
                     "http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/228361_poster_600_888_20160628050038.jpg",
                     "https://www.youtube.com/watch?v=_rRoD28-WgU")
 
 # World War Z Movie
 wwz = media.Movie("World War Z",
-                    "Gerry Lane, empleado de las Naciones Unidas, deberá recorrer el mundo en una "
-                    "carrera contra el tiempo. Su misión será detener una pandemia zombi que amenaza "
+                    "Gerry Lane, empleado de las Naciones Unidas, deber&aacute; recorrer el mundo en una "
+                    "carrera contra el tiempo. Su misi&oacute;n ser&aacute; detener una pandemia zombi que amenaza "
                     "con destruir a la humanidad.",
                     "http://base.laptv.com/public/mcplay/imagenes/pub/176876_poster_600_888_20140423000029.jpg",
                     "https://www.youtube.com/watch?v=HcwTxRuq-uk")
 
 # Mission Impossible Movie
 mission_impossible = media.Movie("Mission: Impossible - Rogue Nation",
-                    "Ethan y equipo asumen su misión más imposible aún, la erradicación de la "
-                    "Syndicate - una organización pícaro Internacional como altamente cualificados "
-                    "como son, comprometido con la destrucción del IMF.",
+                    "Ethan y equipo asumen su misi&oacute;n m&aacute;s imposible a&uacute;n, la erradicaci&oacute;n de la "
+                    "Syndicate - una organizaci&oacute;n p&iacute;caro Internacional como altamente cualificados "
+                    "como son, comprometido con la destrucci&oacute;n del IMF.",
                     "http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/218185_poster_600_888_20160430050212.jpg",
                     "https://www.youtube.com/watch?v=gOW_azQbOjw")
 # Shrek movie
 shrek = media.Movie("Shrek",
-                    "La princesa Fiona, recluida en la torre más alta de un lejano castillo, "
-                    "espera que su perfecto príncipe azul la rescate. En cambio, su salvador "
+                    "La princesa Fiona, recluida en la torre m&aacute;s alta de un lejano castillo, "
+                    "espera que su perfecto pr&iacute;ncipe azul la rescate. En cambio, su salvador "
                     "resulta ser Shrek, un ogro de pantano con muy poca paciencia.",
                     "http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/137247_poster_600_888_20131120061919.jpg",
                     "https://www.youtube.com/watch?v=1_INNPR84CI")
 # Casper movie
 casper = media.Movie("Casper",
-                    "El Dr. James Harvey y su hija Kat llegan a una mansión de la que deben desalojar "
-                    "a todos los fantasmas. Pero cuando Kat conoce a Casper, el simpático espectro de "
-                    "un joven, y a sus tres alocados tíos, la convivencia se torna muy intensa.",
+                    "El Dr. James Harvey y su hija Kat llegan a una mansi&oacute;n de la que deben desalojar "
+                    "a todos los fantasmas. Pero cuando Kat conoce a Casper, el simp&aacute;tico espectro de "
+                    "un joven, y a sus tres alocados t&iacute;os, la convivencia se torna muy intensa.",
                     "http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/138427_poster_600_888_20130615081440.jpg",
                     "https://www.youtube.com/watch?v=BBEB9OSfeCA")
 # Hitman movie
@@ -87,9 +87,9 @@ hitman = media.Movie("HITMAN",
                     "https://www.youtube.com/watch?v=alQlJDRnQkE")
 # Casper movie
 casper = media.Movie("Forgetting Sarah Marshall",
-                    "Un músico que lleva años con su novia, una estrella de televisión, se derrumba "
+                    "Un m&uacute;sico que lleva años con su novia, una estrella de televisi&oacute;n, se derrumba "
                     "cuando la chica lo deja. Decidido a recuperar su vida, el joven emprende un "
-                    "viaje sin imaginar a quién se va a encontrar.",
+                    "viaje sin imaginar a qui&eacute;n se va a encontrar.",
                     "http://cdn.foxplay.com/sites/common/objects/img/movies/resized/320x480/154612_poster_600_888_20160610050138.jpg",
                     "https://www.youtube.com/watch?v=PyVEHIO6jZ0")
 
