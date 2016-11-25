@@ -1,3 +1,18 @@
+########################################## 
+# Project       : Movie Website
+# Created by    : Full Stack Web Developer Nanodegree - Udacity
+# Edited by     : Carlos Barillas
+# Date Started  : 11/18/2016
+# Date Completed: 11/25/2016
+########################################## 
+
+####################### Movies Center ###############################
+# Description:  This file allow us create a html page with multiples
+#               trailers of movies. You need import webbrowser module 
+#               for open the browser with the video trailer and import
+#               os module for create the file .html
+#####################################################################
+
 import webbrowser
 import os
 import re
@@ -12,14 +27,22 @@ main_page_head = '''
     <title>Fresh Tomatoes!</title>
 
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" 
+    href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" 
+    href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script 
+    src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script 
+    src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link 
+  rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script 
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script 
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
@@ -68,16 +91,22 @@ $(document).ready(function(){
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', 
+        function (event) {
+            // Remove the src so the player itself gets removed, 
+            // as this is the only reliable way to ensure the video 
+            // stops playing in IE
             $("#trailer-video-container").empty();
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+            var sourceUrl = 
+            'http://www.youtube.com/embed/' + 
+            trailerYouTubeId + 
+            '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append(
+            $("<iframe></iframe>", {
               'id': 'trailer-video',
               'type': 'text-html',
               'src': sourceUrl,
@@ -102,8 +131,10 @@ main_page_content = '''
     <div class="modal" id="trailer">
       <div class="modal-dialog">
         <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          <a href="#" 
+          class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img 
+            src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
           </a>
           <div class="scale-media" id="trailer-video-container">
           </div>
@@ -116,7 +147,10 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#"><center>Fresh Tomatoes Movie Trailers With ToolTip Storyline</center></a>
+            <a class="navbar-brand" href="#">
+                <center>
+                    Fresh Tomatoes Movie Trailers With ToolTip Storyline
+                </center></a>
           </div>
         </div>
       </div>
@@ -131,9 +165,12 @@ main_page_content = '''
 
 # A single movie entry html template with description tooltip
 movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" 
+data-trailer-youtube-id="{trailer_youtube_id}" 
+data-toggle="modal" data-target="#trailer">
 <img src="{poster_image_url}" width="220" height="342">
-<a href="#" data-toggle="tooltip" data-placement="bottom" title="{movie_storyline}">
+<a href="#" data-toggle="tooltip" 
+data-placement="bottom" title="{movie_storyline}">
   <h2>{movie_title}</h2>
 </a>
 </div>
