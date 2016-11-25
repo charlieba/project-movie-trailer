@@ -46,7 +46,7 @@ project-movie-trailer/
   └── fresh_tomatoes.html
 ```
 
-The file to RUN ismovies_center.py
+The file to RUN is movies_center.py
 
 
 ## Bugs and feature requests
